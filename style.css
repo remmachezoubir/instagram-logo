@@ -1,0 +1,182 @@
+body{
+
+    margin:0;
+    
+    padding:0;
+    
+    display:flex;
+    
+    justify-content:center;
+    
+    align-items:center;
+    
+    min-height:100vh;
+    max-width: 100vw;
+    background:linear-gradient(315deg,rgba(0,0,50, 1) , rgba(0,0,120,.9),rgba(0,0,50, 1));
+    
+    }
+    
+    div{
+    
+    border-radius:25%;
+    
+    height:25em;
+    
+    width:25em;
+    
+    background:linear-gradient(45deg , #FFDC57,#D72000,#6D0980, #6D0980);
+    
+    z-index:5;
+    
+    transition:1s;
+    
+    animation: zozo 5s 1s both;
+    
+    }
+    
+    .blur{
+    
+    filter:blur(2em);
+    
+    position:absolute;
+    
+    z-index:0;
+    
+    }
+    
+    div:hover{
+    
+     transform:rotateX(360deg);
+    
+     
+    
+     }
+    
+    div:hover span{
+    
+    box-shadow: .5em .5em 2em white, inset .2em .2em 1em white;
+    
+    }
+    
+    span{
+    
+    position:relative;
+    
+    display:flex;
+    
+    transition:2s;
+    
+    }
+    
+    .point{
+    
+    height:1.5em;
+    
+    width:1.5em;
+    
+    border-radius:50%;
+    
+    top:25%;
+    
+    left:75%;
+    
+    background:white;
+    
+    }
+    
+    .circle1{
+    
+    height:18.75em;
+    
+    width:18.75em;
+    
+    border: 1.5em solid white;
+    
+    border-radius:25%;
+    
+    margin-left:1.5em;
+    
+    margin-top:.3em;
+    
+    }
+    
+    .circle2{
+    
+    height:5.6em;
+    
+    width:5.6em;
+    
+    border: 1.5em solid white;
+    
+    border-radius:50%;
+    
+    margin-left:50%;
+    
+    margin-top:50%;
+    
+    transform:translate(-50% , -50%);
+    
+    }
+    
+    @keyframes zozo {
+    
+    0%{
+    
+    opacity:0;
+    
+    }
+    
+    50%{
+    
+    opacity:.3;
+    
+    }
+    
+    100%{
+    
+    opacity:1;
+    
+    }
+    
+    }
+    
+    .span5 {
+    
+    position:absolute;
+    
+    height:1em;
+    
+    width:1em;
+    
+    border-radius:25%;
+    
+    background:linear-gradient(45deg , #FFDC57,#D72000,#6D0980, #6D0980);
+    
+    animation:zozo2 5s  both;
+    
+    }
+    
+    @keyframes zozo2 {
+    
+    0%{
+    
+    height:0.1em;
+    
+    width:0.1em;
+    
+    filter:blur(0em);
+    
+    }
+    
+    100%{
+    
+    height:30em;
+    
+    width:30em;
+    
+    filter:blur(5em) hue-rotate(360deg);
+    
+    }
+    
+    }
+    
